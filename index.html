@@ -388,11 +388,47 @@ body {
     height: 17px;
   }
 }
+
+.top-phone-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 20;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30,78,120,.76);
+  border: 1px solid rgba(255,255,255,.55);
+  box-shadow: 0 5px 14px rgba(30,78,120,.28);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  text-decoration: none;
+  transition: transform .16s ease, background .16s ease;
+}
+.top-phone-btn:hover {
+  transform: scale(1.05);
+  background: rgba(47,116,177,.90);
+}
+.top-phone-btn svg {
+  width: 23px;
+  height: 23px;
+  fill: #fff;
+}
+
 </style>
 </head>
 <body>
 
 <div class="card">
+  <a class="top-phone-btn" href="tel:+525567853075" title="Llamar a Hilda Fuentes" aria-label="Llamar a Hilda Fuentes">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.3 11.3 0 0 0 3.54.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.59 21 3 13.41 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.3 11.3 0 0 0 .57 3.54 1 1 0 0 1-.25 1.01l-2.2 2.24z"/>
+</svg>
+  </a>
+
   <div class="texture"></div>
   <div class="shape one"></div>
   <div class="shape two"></div>
